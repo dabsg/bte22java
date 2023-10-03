@@ -25,9 +25,6 @@ public class Upp26 {
 		System.out.println("förnamn: " +surNamn+ "\nefternamn "+lastnamn);
 		
 		
-		System.out.println(surNamn);
-		
-		
 		
 		
 		
