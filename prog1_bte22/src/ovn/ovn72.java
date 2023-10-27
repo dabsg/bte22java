@@ -4,13 +4,8 @@ import java.util.Scanner;
 
 public class ovn72 {
  public static void main(String[] args) {
-	
-
-		Scanner input = new Scanner(System.in);
-		
-		
+	 	Scanner input = new Scanner(System.in);
 		System.out.println("ange mäng bränsle kvar");
-		
 		int b = input .nextInt();
 	 
 		if(b>10) {
