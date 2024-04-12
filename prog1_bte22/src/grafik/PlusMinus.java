@@ -29,6 +29,15 @@ public class PlusMinus {
 			numberHolder.setText(""+number);
 		});
 		
+		minus.addActionListener(e->{
+			number--;
+			numberHolder.setText(""+number);
+		});
+		
+		
+		
+		
+		
 	}
 	
 	public static void main(String[] args) {
