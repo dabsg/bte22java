@@ -13,7 +13,7 @@ import javax.swing.JRadioButton;
 public class Buttontest {
 
 	// varaiabler
-	JFrame f = new JFrame();
+	JFrame f = new JFrame("dfjk");
 	JRadioButton c = new JRadioButton("c");
 	JRadioButton cSharp = new JRadioButton("csharp");
 	JRadioButton java = new JRadioButton("java");
