@@ -4,12 +4,14 @@ import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.FlowLayout;
 import java.awt.Graphics;
+import java.awt.event.KeyEvent;
+import java.awt.event.KeyListener;
 
 import javax.swing.JComponent;
 import javax.swing.JFrame;
 import javax.swing.Timer;
 
-public class Pacman extends JComponent {
+public class Pacman extends JComponent implements KeyListener {
 
 	//variabler
 	
@@ -18,7 +20,7 @@ public class Pacman extends JComponent {
 	
 	
 	int [] x = new int[3];
-	int [] y = {150,175,125};
+	int [] y = {pacy+50,pacy+75,pacy+25};
 	Timer t;
 	int mouth=0;
 	
@@ -84,15 +86,47 @@ public class Pacman extends JComponent {
 	
 	public static void main(String[] args) {
 		
+		
+		Pacman p= new Pacman();
+		
 	JFrame f= new JFrame();
 	f.setLayout(new FlowLayout());
 	f.setSize(new Dimension(400,400));
 	f.setVisible(true);
-	f.add(new Pacman());
+	f.add(p);
 	f.pack();
-	
+	f.addKeyListener(p);
 	
 		
+		
+	}
+
+
+	@Override
+	public void keyTyped(KeyEvent e) {
+		// TODO Auto-generated method stub
+		
+	}
+
+
+	@Override
+	public void keyPressed(KeyEvent e) {
+		// TODO Auto-generated method stub
+		
+		if(e.getKeyCode()==KeyEvent.VK_RIGHT) {
+			
+			
+			pacx=pacx+10;
+			
+		}
+		
+		
+	}
+
+
+	@Override
+	public void keyReleased(KeyEvent e) {
+		// TODO Auto-generated method stub
 		
 	}
 	
